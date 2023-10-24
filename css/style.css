@@ -1,0 +1,136 @@
+@font-face {
+    font-family: gilroy;
+    src: url("../font/Gilroy-Medium_eHDK2RllDd.ttf") format("ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: kajiro;
+    src: url("../font/Kajiro_Bold.ttf") format("ttf");
+    font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    text-transform: capitalize;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+.main .back{
+    width: 100%;
+    height: 100vh;
+}
+.main .back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main .top{
+    width: 100%;
+    height: 100vh;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.main .top .workingSpace {
+    width: 85%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+nav {
+    padding: 2vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-left {
+    display: flex;
+}
+nav .nav-left img{
+    margin-right: 70px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: gilroy;
+    font-weight: 600;
+    pointer-events: all;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(0, -50%);
+    color: white;
+    display: flex;
+}
+.hero .hero-left {
+    min-width: 50%;
+}
+.hero .hero-left .elem {
+    height: 9vw;
+    overflow: hidden;
+    position: relative;
+}
+.hero .hero-left .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 10vw;
+    line-height: 1;
+    font-weight: 100;
+    font-family: kajiro;
+    letter-spacing: 2px;
+}
+.hero .hero-left .elem h1:nth-child(1){
+    top: 0;
+}
+.hero .hero-left button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1vw;
+    pointer-events: all;
+    cursor: pointer;
+}
+.hero .hero-right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 22%;
+    text-align: right;
+}
+.hero .hero-right img {
+    margin: 20px 0;
+}
+.hero .hero-right p {
+    font-size: 14px;
+    font-family: gilroy;
+    line-height: 20px;
+}
+.hero .hero-right p:last-child {
+    margin-top: 80px;
+}
