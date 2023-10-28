@@ -1,12 +1,10 @@
 @font-face {
     font-family: gilroy;
-    src: url("../font/Gilroy-Medium_eHDK2RllDd.ttf") format("ttf");
-    font-display: swap;
+    src: url("../font/Gilroy-Medium_eHDK2RllDd.ttf")
 }
 @font-face {
     font-family: kajiro;
-    src: url("../font/Kajiro_Bold.ttf") format("ttf");
-    font-display: swap;
+    src: url("../font/Kajiro_Bold.ttf")
 }
 *{
     margin: 0;
